@@ -1,5 +1,7 @@
 import React from 'react'
+import { GlobalStyle } from '../../globalStyled'
 import { Brand } from '../../components/brand'
+import { P } from '../../element/p'
 
 const Nav = () => {
   return (
@@ -9,7 +11,7 @@ const Nav = () => {
       </section>
       <section>
         <div>
-          <p>Devchallenges Board</p>
+          <P nameBoard>Devchallenges Board</P>
           <br />
           <button>All board</button>
         </div>
@@ -31,8 +33,16 @@ const Nav = () => {
 }
 
 export default {
-  title: 'nav',
-  component: Nav
+  title: 'Component/nav',
+  component: Nav,
+  decorators: [
+    (Story) => (
+      <div>
+        <GlobalStyle />
+        <Story />
+      </div>
+    )
+  ]
 }
 
 export const Navigate = () => <Nav />
