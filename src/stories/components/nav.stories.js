@@ -1,11 +1,11 @@
 import React from 'react'
-import { logo } from '../../Logo.svg'
+import { Brand } from '../../components/brand'
 
 const Nav = () => {
   return (
     <nav>
       <section>
-        {logo}
+        <Brand />
       </section>
       <section>
         <div>
