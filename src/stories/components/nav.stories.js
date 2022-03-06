@@ -2,6 +2,8 @@ import React from 'react'
 import { GlobalStyle } from '../../globalStyled'
 import { Brand } from '../../components/brand'
 import { P } from '../../element/p'
+import { Button } from '../../element/button'
+import { MdOutlineGridView } from 'react-icons/md'
 
 const Nav = () => {
   return (
@@ -13,7 +15,7 @@ const Nav = () => {
         <div>
           <P nameBoard>Devchallenges Board</P>
           <br />
-          <button>All board</button>
+          <Button icon={<MdOutlineGridView />}>All board</Button>
         </div>
         <div>
           <form>
