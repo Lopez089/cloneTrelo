@@ -4,6 +4,7 @@ import { Brand } from '../../components/brand'
 import { P } from '../../element/p'
 import { Button } from '../../element/button'
 import { MdOutlineGridView } from 'react-icons/md'
+import { Hr } from '../../element/hr'
 
 const Nav = () => {
   return (
@@ -14,7 +15,7 @@ const Nav = () => {
       <section>
         <div>
           <P nameBoard>Devchallenges Board</P>
-          <br />
+          <Hr />
           <Button icon={<MdOutlineGridView />}>All board</Button>
         </div>
         <div>
