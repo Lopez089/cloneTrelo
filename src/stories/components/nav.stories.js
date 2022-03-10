@@ -5,6 +5,7 @@ import { P } from '../../element/p'
 import { Button } from '../../element/button'
 import { MdOutlineGridView } from 'react-icons/md'
 import { Hr } from '../../element/hr'
+import { Input } from '../../element/input'
 
 const Nav = () => {
   return (
@@ -19,10 +20,7 @@ const Nav = () => {
           <Button icon={<MdOutlineGridView />}>All board</Button>
         </div>
         <div>
-          <form>
-            <input type='text' />
-            <button>Search</button>
-          </form>
+          <Input />
         </div>
       </section>
       <section>

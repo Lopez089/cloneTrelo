@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 const StyledButton = styled.button`
   background: #F2F2F2;
@@ -9,7 +9,7 @@ const StyledButton = styled.button`
   line-height: 18px;
   letter-spacing: -0.035em;
   text-align: left;
-  padding:7px 16px;
+  padding:7px 19px;
   border:none;
   color:#828282;
 
@@ -18,13 +18,20 @@ const StyledButton = styled.button`
     padding: 0 13px 0 0;
   }
 
+  ${prop => prop.color === 'primary'
+    ? css`
+      background:#2F80ED;
+      color:#FFFFFF;
+    `
+    : null
+  }
   
 `
 
-export const Button = ({ children, icon }) => {
+export const Button = ({ children, icon, color }) => {
   return (
     <>
-      <StyledButton>
+      <StyledButton color={color}>
         {icon || null}
         {children}
       </StyledButton>
