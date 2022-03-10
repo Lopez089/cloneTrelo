@@ -6,6 +6,7 @@ import { Button } from '../../element/button'
 import { MdOutlineGridView } from 'react-icons/md'
 import { Hr } from '../../element/hr'
 import { Input } from '../../element/input'
+import { NavUser } from '../../components/navUser'
 
 const Nav = () => {
   return (
@@ -24,10 +25,7 @@ const Nav = () => {
         </div>
       </section>
       <section>
-        <div>
-          <img src='https://www.pikpng.com/pngl/m/326-3261783_person-icon-default-user-image-jpg-clipart.png' alt='user' />
-          <p>Xanthe Neal</p>
-        </div>
+        <NavUser />
       </section>
     </nav>
   )
