@@ -32,14 +32,31 @@ const StyledButton = styled.button`
     : null
   }
 
+  ${prop => prop.add
+    ? css`
+      background: #DAE4FD;
+      color:#2F80ED;
+      width:100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      align-items: center;
+      
 
+      svg{
+        color:#2F80ED !important;
+        padding:0;
+      }
+      `
+    : null
+  }
 
 `
 
-export const Button = ({ children, icon, color }) => {
+export const Button = ({ children, icon, color, add }) => {
   return (
     <>
-      <StyledButton color={color}>
+      <StyledButton color={color} add={add}>
         {icon || null}
         {children}
       </StyledButton>
