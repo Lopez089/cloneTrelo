@@ -6,26 +6,34 @@ const StyledButton = styled.button`
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 18px;
+  line-height: ${prop => (typeof prop.children[1]) === 'undefined' ? '0px' : '18px'};
   letter-spacing: -0.035em;
-  text-align: left;
-  padding:7px 19px;
-  border:none;
+  padding:${prop => (typeof prop.children[1]) === 'undefined' ? '9px' : '7px 19px'};
+  border: none;
   color:#828282;
 
   svg{
-    color:#828282;
-    padding: 0 13px 0 0;
-  }
+  color:#828282;
+  padding:${prop => (typeof prop.children[1]) === 'undefined' ? '0px' : '0 13px 0 0'} ;
+}
 
   ${prop => prop.color === 'primary'
     ? css`
       background:#2F80ED;
       color:#FFFFFF;
+
+      svg{
+        color: #FFFFFF; 
+        width:14px;
+        height:14px ;
+      }
+
     `
     : null
   }
-  
+
+
+
 `
 
 export const Button = ({ children, icon, color }) => {

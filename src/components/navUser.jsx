@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { MdArrowDropDown } from 'react-icons/md'
 import { IconContext } from 'react-icons'
+import { Avatar } from '../components/avatar'
 
 export const ContainerNavUser = styled.div`
   width: 160px;
@@ -20,18 +21,16 @@ export const ContainerNavUser = styled.div`
     color: #333333;
   }
 
-  img{
-    width:32px;
-    height:32px;
-    border-radius:8px;
-  }
-
 `
 
 export const NavUser = () => {
   return (
     <ContainerNavUser>
-      <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDJzEaxLN-jGRYYUO65pWu7Q9GXoNt4LUSSA&usqp=CAU' alt='user' />
+      <Avatar
+        src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDJzEaxLN-jGRYYUO65pWu7Q9GXoNt4LUSSA&usqp=CAU'
+        alt='user'
+        name='XN'
+      />
       <p>Xanthe Neal</p>
       <IconContext.Provider value={{ size: '1.5rem' }}>
         <MdArrowDropDown />

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '../../element/button'
 import { GlobalStyle } from '../../globalStyled'
-import { MdOutlineGridView } from 'react-icons/md'
+import { MdOutlineGridView, MdOutlineAdd } from 'react-icons/md'
 
 export default {
   title: 'element/button',
@@ -19,3 +19,4 @@ export default {
 export const buttonDefautl = () => <Button>Default</Button>
 export const buttonIcon = () => <Button icon={<MdOutlineGridView />}>All board</Button>
 export const buttonPrimary = () => <Button color='primary'>Search</Button>
+export const buttonOnlyIcon = () => <Button icon={<MdOutlineAdd />} color='primary' />
