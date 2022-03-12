@@ -1,10 +1,10 @@
 import React from 'react'
-import { Nav } from '../../components/nav'
+import { Flex } from '../../element/flex'
 import { GlobalStyle } from '../../globalStyled'
 
 export default {
-  title: 'Component/nav',
-  component: Nav,
+  title: 'element/flex',
+  component: Flex,
   decorators: [
     (Story) => (
       <div>
@@ -15,4 +15,4 @@ export default {
   ]
 }
 
-export const Navigate = () => <Nav />
+export const flex = () => <Flex justifyContent='center'>Center</Flex>
