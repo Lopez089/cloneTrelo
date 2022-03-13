@@ -8,5 +8,6 @@ export const Grid = styled.div`
   align-items: ${prop => prop.alignItems};
   gap: ${prop => prop.gap};
   background: ${prop => prop.bg};
-  color: ${prop => prop.color}
+  color: ${prop => prop.color};
+  padding: ${prop => prop.p}
   `
