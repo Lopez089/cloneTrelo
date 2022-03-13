@@ -23,7 +23,7 @@ const StyledButton = styled.button`
       color:#FFFFFF;
 
       svg{
-        color: #FFFFFF; 
+        color: #FFFFFF !important; 
         width:14px;
         height:14px ;
       }

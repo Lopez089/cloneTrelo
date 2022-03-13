@@ -33,12 +33,31 @@ export const StyledCard = styled.div`
     color:#BDBDBD;
     font-size: 12px;
   }
+
+  .img{
+    width:100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
 `
 
-export const Card = () => {
+export const Card = ({ img }) => {
   return (
     <StyledCard>
       <Wrap p='12px'>
+        {
+          img
+            ? (
+              <Flex h='130px' w='100%'>
+                <img
+                  className='img'
+                  src={img}
+                />
+              </Flex>)
+            : null
+        }
+
         <p>✋🏿 Add what you'd like to work on below</p>
         <Grid p='0 0 24px 0' justifyContent='start'>
           <Badge>Concept</Badge>

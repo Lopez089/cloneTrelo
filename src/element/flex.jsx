@@ -5,5 +5,7 @@ export const Flex = styled.section`
   justify-content: ${prop => prop.justifyContent};
   align-items: ${prop => prop.alignItems};
   gap: ${prop => prop.gap};
-
+  width: ${prop => prop.w};
+  height: ${prop => prop.h};
+  flex-direction: ${prop => prop.flexDirection};
 `
